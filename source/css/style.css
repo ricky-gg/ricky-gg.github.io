@@ -785,8 +785,19 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	margin-top: 10px;
 }
 
-
 /* Separator */
+#separator {
+  padding: 300px 0 200px 0;
+  color: #333;
+  background: url(../img/Antarctica/separator.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* Separator 
 #separator {
 	padding: 300px 0 200px 0;
 	color: #333;
@@ -794,6 +805,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	background-size: 100% 100%;
 	background-attachment: fixed;
 }
+*/
 /* Media Queries */
 @media(min-width:768px) {
 .intro {
@@ -922,3 +934,4 @@ header .intro-text {
 	padding: 10px 100px 20px 20px;
 }
 }
+
