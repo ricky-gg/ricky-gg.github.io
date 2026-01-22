@@ -262,12 +262,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: inline-block;
 
 }
-<!--#about p {
+#about p {
 	margin-top: 20px;
 	margin-bottom: 30px;
 	font-size: 18px;
     color: #FFF5EE;
-}-->
+}
 #about p {
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -488,11 +488,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	background-attachment: fixed;
 }
 
-ul li {
+/*ul li {
 	display: inline-block;
 	color: #BDBDBD;
-}
+}*/
 
+ul li {
+	color: #BDBDBD;
+}
 
 /* field */
 #field {
@@ -935,3 +938,87 @@ header .intro-text {
 }
 }
 
+
+
+
+
+
+/* =========================
+   Mobile fixes (<= 768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* stop sideways scrolling */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  /* hero spacing + typography */
+  .intro {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .intro .intro-body {
+    vertical-align: middle;
+  }
+  .intro .intro-body h1 {
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+  .intro .intro-body .intro-text p {
+    font-size: 16px;
+  }
+  .intro .intro-body .intro-text .social ul li {
+    margin: 0 10px;
+  }
+
+  /* About photo: responsive */
+  #about img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  /* FIX: your research grid is wider than the page */
+  .research-items,
+  .field-items {
+    width: 100%;
+  }
+
+  /* scale hover tiles and reduce zoom on hover (phones don’t “hover”) */
+  .research-item:hover,
+  .field-item:hover {
+    transform: none;
+    margin-bottom: 20px;
+  }
+  .hover-bg .hover-text {
+    padding: 20% 0;
+  }
+
+  /* separator: make it smaller + avoid iOS fixed background bugs */
+  #separator {
+    padding: 120px 0;
+    background-attachment: scroll;
+  }
+
+  /* sections that use fixed backgrounds: turn off fixed on mobile */
+  #about,
+  #research,
+  #publications,
+  #field,
+  #contact {
+    background-attachment: scroll;
+  }
+
+  /* CRITICAL: lists should be vertical on mobile (publications especially) */
+  ul li {
+    display: list-item;
+  }
+
+  /* tighten big type a bit */
+  #research p, #field p1 {
+    font-size: 18px;
+  }
+}
