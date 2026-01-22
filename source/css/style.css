@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Inter', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	/*color: #616e7c;*/
@@ -10,9 +10,12 @@ body, html {
 h1 {
 	font-weight: 700;
 }
-h1 strong {
-	font-weight: 900;
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
 }
+
 h2 {
 	text-transform: uppercase;
 	line-height: 20px;
@@ -1022,3 +1025,4 @@ header .intro-text {
     font-size: 18px;
   }
 }
+
