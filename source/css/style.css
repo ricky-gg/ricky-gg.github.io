@@ -440,12 +440,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	font-weight: 700;
 }
 
-
+#research img {
+  max-width: 100%;
+  height: auto;
+}
 
 .research-items {
-    width: 120%;
+    width: 100%;
     position: relative;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 .research-item {
 	margin-bottom: 20px;
@@ -1025,4 +1028,5 @@ header .intro-text {
     font-size: 18px;
   }
 }
+
 
