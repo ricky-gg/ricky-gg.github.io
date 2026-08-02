@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.2">
+<title>Ricky Garza-Giron - Personal Website</title>
+<meta name="description" content="Ricky Garza-Giron - Personal Website">
+<meta name="author" content="Ricky Garza-Giron">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="source/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="source/fonts/font-awesome/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="source/fonts/weather-icons-master/css/weather-icons.css">
+
+<!-- Slider
+    ================================================== -->
+<link href="source/css/owl.carousel.css" rel="stylesheet" media="screen">
+<link href="source/css/owl.theme.css" rel="stylesheet" media="screen">
+
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="source/css/style.css">
+<link rel="stylesheet" type="text/css" href="source/css/prettyPhoto.css">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Try mobile screen adjustment
+    ================================================== -->
+<style type="text/css">
+
+.creep-carousel {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+.creep-carousel-track {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+  background: #111;
+  border-radius: 6px;
+}
+.creep-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .8s ease;
+}
+.creep-slide.active {
+  opacity: 1;
+}
+.creep-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,.5);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.creep-carousel-btn:hover {
+  background: rgba(0,0,0,.8);
+}
+.creep-carousel-btn.prev {
+  left: 10px;
+}
+.creep-carousel-btn.next {
+  right: 10px;
+}
+.creep-carousel-dots {
+  text-align: center;
+  margin-top: 12px;
+}
+.creep-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin: 0 4px;
+  cursor: pointer;
+}
+.creep-dot.active {
+  background: #8A0829;
+}
+
+</style>
+
+<!-- Header -->
+
+<!-- Navigation -->
+<div id="nav">
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+        <a class="navbar-brand" href="https://ricky-gg.github.io/#research">BACK TO RESEARCH</a> </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden"> <a href="#page-top"></a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+
+
+<!-- Research -->
+<div id="research" class="text-left ">
+  <div class="container">
+  <div class="">
+      <div class="col-sm-12">
+        <div class="page-header" style="margin-top: 0">
+            <h4>Creepmeters: filling the gaps in fault creep measurements on the San Andreas and Calaveras faults</h4>
+            <h3>Ricardo Garza-Giron, in collaboration with Prof. Roger Bilham (CIRES, University of Colorado Boulder)</h3>
+          <div style="color: red">
+            <h4>WORK IN PROGRESS</h4>
+          </div>
+        </div>
+
+        <div class="creep-carousel" id="creepCarousel">
+          <div class="creep-carousel-track" id="creepTrack"></div>
+          <button class="creep-carousel-btn prev" id="creepPrev" aria-label="Previous image">&#10094;</button>
+          <button class="creep-carousel-btn next" id="creepNext" aria-label="Next image">&#10095;</button>
+          <div class="creep-carousel-dots" id="creepDots"></div>
+        </div>
+
+        <div class="col-sm-12">
+            <p></p>
+            <p>
+              Not all fault slip happens in earthquakes. Many faults, including sections of the San Andreas and Calaveras faults here in central California, are known to creep: slipping slowly, either continuously or in small pulses, without shaking the ground at all. A creepmeter is a deceptively simple but extremely sensitive instrument that we install directly across a fault trace to track that slow slip at the micrometer scale, giving us a continuous, high-resolution record of how much the two sides of the fault are sliding past each other, day by day.
+            </p>
+            <p>
+              Measuring surface creep matters because it tells us how locked a fault segment is, which feeds directly into seismic hazard assessments, and it flags places where slow, ongoing slip could damage roads, pipelines, or any infrastructure that crosses the fault. What we still don't fully understand are the details of episodic creep events: brief accelerations of a few millimeters of slip that build up and then slowly relax back down over hours to days. How large do these events get? How far do they propagate along the fault? Are they related to the deeper, aseismic slip happening below the surface? And how much of what we record is the fault itself versus rain, temperature, or other environmental noise contaminating the signal?
+            </p>
+            <p>
+              To chase these questions, we are filling in the instrumental gaps along the northern edge of the central creeping section of the San Andreas fault near San Juan Bautista and along the adjacent Calaveras fault, installing new creepmeters and working on better ways to identify and remove environmental effects like rainfall from the data. This work is done in close collaboration with Prof. Roger Bilham (CIRES, University of Colorado Boulder), the genius behind the original development of these creepmeter instruments, whose decades of experience building and running these instruments around the world is at the core of this effort.
+            </p>
+            <p>
+              Stay tuned as we install and start streaming data from the new stations. This page will grow with pictures from the field and updates as we start resolving individual creep events along these faults.
+            </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+</div>
+</div>
+ <!-- end of research-->
+
+<script type="text/javascript">
+(function () {
+  var folder = 'source/research/creepmeters/';
+  var extensions = ['jpg', 'jpeg', 'png'];
+  var maxImages = 30;
+  var found = [];
+  var current = 0;
+
+  var carousel = document.getElementById('creepCarousel');
+  var track = document.getElementById('creepTrack');
+  var dotsWrap = document.getElementById('creepDots');
+  var prevBtn = document.getElementById('creepPrev');
+  var nextBtn = document.getElementById('creepNext');
+
+  function tryLoad(n, extIndex) {
+    if (extIndex >= extensions.length) {
+      build();
+      return;
+    }
+    var src = folder + n + '.' + extensions[extIndex];
+    var img = new Image();
+    img.onload = function () {
+      found.push(src);
+      if (found.length < maxImages) {
+        tryLoad(n + 1, 0);
+      } else {
+        build();
+      }
+    };
+    img.onerror = function () {
+      tryLoad(n, extIndex + 1);
+    };
+    img.src = src;
+  }
+
+  function build() {
+    if (found.length === 0) {
+      carousel.style.display = 'none';
+      return;
+    }
+    found.forEach(function (src, idx) {
+      var im = document.createElement('img');
+      im.src = src;
+      im.alt = 'Creepmeter project photo ' + (idx + 1);
+      im.className = 'creep-slide' + (idx === 0 ? ' active' : '');
+      track.appendChild(im);
+
+      var dot = document.createElement('span');
+      dot.className = 'creep-dot' + (idx === 0 ? ' active' : '');
+      dot.addEventListener('click', function () { show(idx); });
+      dotsWrap.appendChild(dot);
+    });
+
+    if (found.length < 2) {
+      prevBtn.style.display = 'none';
+      nextBtn.style.display = 'none';
+    } else {
+      prevBtn.addEventListener('click', function () { show(current - 1); });
+      nextBtn.addEventListener('click', function () { show(current + 1); });
+    }
+  }
+
+  function show(idx) {
+    var slides = track.querySelectorAll('.creep-slide');
+    var dots = dotsWrap.querySelectorAll('.creep-dot');
+    if (idx < 0) idx = slides.length - 1;
+    if (idx >= slides.length) idx = 0;
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = idx;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  tryLoad(1, 0);
+})();
+</script>
+
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; 2019 Ricardo Garza-Giron</p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="source/js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="source/js/bootstrap.js"></script>
+<script type="text/javascript" src="source/js/SmoothScroll.js"></script>
+<!--
+<script type="text/javascript" src="source/js/easypiechart.js"></script>
+<script type="text/javascript" src="source/js/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="source/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="source/js/jquery.counterup.js"></script>
+<script type="text/javascript" src="source/3d-smooth-carousel-slider/js/index.js"></script>
+<script type="text/javascript" src="source/js/waypoints.js"></script>
+<script type="text/javascript" src="source/js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="source/js/owl.carousel.js"></script>
+<script type="text/javascript" src="source/js/main.js"></script>
+-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154864825-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154864825-1');
+</script>
+
+</body>
+</html>
